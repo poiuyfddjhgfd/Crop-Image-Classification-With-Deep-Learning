@@ -1,6 +1,5 @@
 streamlit
-torch==2.2.2
-torchvision==0.17.2
-opencv-python-headless
-joblib
+torch==2.5.1
+torchvision==0.20.1
 pillow
+joblib
