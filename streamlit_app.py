@@ -7,9 +7,9 @@ import joblib
 import io
 model_data = torch.load(
     "crop_classifier_model.pkl",
-    map_location=torch.device("cpu")
+    map_location=torch.device("cpu"),
+    weights_only=False
 )
-
 model=models.resnet18(pretrained=False)
 model.fc=torch.nn.Linear(model.fc.in_features,len(model_data["class_to_idx"]))
 model.load_state_dict(model_data["model_state_dict"])
