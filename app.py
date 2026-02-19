@@ -4,7 +4,7 @@ from torchvision import models, transforms
 from PIL import Image
 
 model_data = torch.load(
-    "crop_classifier_model_fixed.pth",
+   "crop_classifier_model.pth",
     map_location="cpu",
     weights_only=False
 )
