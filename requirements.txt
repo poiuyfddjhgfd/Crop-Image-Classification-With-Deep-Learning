@@ -1,5 +1,5 @@
-streamlit
 torch
 torchvision
+gradio
 pillow
-joblib
+
